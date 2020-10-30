@@ -15,7 +15,7 @@ Run `git clone https://github.com/brunoluisv/fullstacksmarket.git`
 
 Deve se ter a instalação do quasar.dev, para isso:
 
-### Node.js >=10 is required.
+##### Node.js >=10 is required.
 
 #### $ yarn global add @quasar/cli
 or
