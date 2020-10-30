@@ -7,9 +7,9 @@ Run `git clone https://github.com/brunoluisv/fullstacksmarket.git`
 
 ## Rodar servidor node
 
-$ cd backend 
-$ npm install
-$ npm start
+cd backend 
+npm install
+npm start
 
 ## Rodar quasar-frontend
 
@@ -22,9 +22,8 @@ $ yarn global add @quasar/cli
 $ npm install -g @quasar/cli
 
 Com o quasar instalado:
-
-$ cd quasar-frontend
-$ quasar dev
+cd quasar-frontend
+quasar dev
 
 ## Rodar angular-frontend
 
@@ -33,4 +32,4 @@ Deve se ter o angular instalado, para isso:
 $ npm install -g @angular/cli
 
 Com o angular instalado:
-$ ng serve --open
+ng serve --open
