@@ -17,9 +17,9 @@ Deve se ter a instalação do quasar.dev, para isso:
 
 # Node.js >=10 is required.
 
-$ yarn global add @quasar/cli
-# or
-$ npm install -g @quasar/cli
+#### $ yarn global add @quasar/cli
+or
+#### $ npm install -g @quasar/cli
 
 Com o quasar instalado:
 <br>
