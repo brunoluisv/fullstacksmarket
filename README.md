@@ -32,4 +32,5 @@ Deve se ter o angular instalado, para isso:
 #### $ npm install -g @angular/cli
 
 Com o angular instalado: <br>
+#### `cd angular-frontend` <br>
 #### `ng serve --open`
