@@ -24,6 +24,7 @@ or
 Com o quasar instalado:
 <br>
 #### `cd quasar-frontend` <br>
+#### `npm install`
 #### `quasar dev`
 
 ## Rodar angular-frontend
@@ -33,4 +34,5 @@ Deve se ter o angular instalado, para isso:
 
 Com o angular instalado: <br>
 #### `cd angular-frontend` <br>
+#### `npm install`
 #### `ng serve --open`
