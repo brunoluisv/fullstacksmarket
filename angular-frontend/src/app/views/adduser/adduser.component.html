@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="card">
+    <img src="../assets/logo.png" class="logo" />
+    <mat-form-field class="example-full-width">
+      <mat-label>Nome do Usuário</mat-label>
+      <input (keyup)="onKeyUp($event)" matInput>
+    </mat-form-field>
+
+    <button class="btn-cancel" routerLink="/" mat-raised-button color="warn">Cancelar</button>
+    <button class="btn-confirm" (click)="confirm()" mat-raised-button color="primary">Confirmar</button>
+  </div>
+</div>

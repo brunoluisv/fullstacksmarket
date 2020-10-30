@@ -1,0 +1,36 @@
+<app-header></app-header>
+
+<mat-toolbar color="primary">
+  <button class="btn-arrow" routerLink="/" mat-mini-fab color="white" aria-label="Adicionar">
+    <mat-icon>arrow_back</mat-icon>
+  </button>
+  <span>Tarefas</span>
+  <span class="spacer"></span>
+  <button class="btn-add" (click)="goToAddtask()" mat-mini-fab color="white" aria-label="Adicionar">
+    <mat-icon>add</mat-icon>
+  </button>
+</mat-toolbar>
+
+<div class="container">
+  <mat-card class="card" *ngFor="let task of tasks">
+    <mat-card-header>
+      <div mat-card-avatar class="task-image"></div>
+      <mat-card-title>Descrição</mat-card-title>
+      <mat-card-subtitle>{{ task.descr }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <span *ngIf="task.state === 1">
+        Estado da tarefa: Feito
+      </span>
+      <span *ngIf="task.state === 0">
+        Estado da tarefa: Pendente
+      </span>
+    </mat-card-content>
+    <mat-card-actions>
+      <button class="btn-left" mat-flat-button color="warn" (click)="excludeTask(task.id, task.descr)">Excluir Tarefa</button>
+      <button (click)="changeState(task.id, task.descr, task.state)" mat-flat-button color="primary">Mudar Estado</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+
+

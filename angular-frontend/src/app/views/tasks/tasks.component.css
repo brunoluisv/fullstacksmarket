@@ -1,0 +1,26 @@
+.btn-arrow {
+  margin-right: 15px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  max-width: 400px;
+  margin: 10px 10px;
+}
+
+.task-image{
+  background-image: url("../../../assets/completed-task.png");
+  background-size: cover;
+}
+
+.btn-left {
+  margin-right: 5px;
+}

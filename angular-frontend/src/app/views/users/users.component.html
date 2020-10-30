@@ -1,0 +1,11 @@
+<app-header></app-header>
+
+<mat-toolbar color="primary">
+  <span class="users">Usuários</span>
+  <span class="spacer"></span>
+  <button routerLink="/adduser" mat-mini-fab color="white" aria-label="Adicionar">
+    <mat-icon>add</mat-icon>
+  </button>
+</mat-toolbar>
+
+<app-list [users]="users" (myEvent)="deleteUser($event.id)"></app-list>

@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="card">
+    <img src="../assets/logo.png" class="logo" />
+    <mat-form-field class="example-full-width">
+      <mat-label>Descrição</mat-label>
+      <input (keyup)="onKeyUp($event)" matInput>
+    </mat-form-field>
+    <mat-radio-group (change)="radioChange($event)" class="group">
+      <mat-radio-button class="radio" value="true">Feito</mat-radio-button>
+      <mat-radio-button value="false">Pendente</mat-radio-button>
+    </mat-radio-group>    
+
+    <button class="btn-cancel" (click)="cancel()"mat-raised-button color="warn">Cancelar</button>
+    <button class="btn-confirm" (click)="confirm()" mat-raised-button color="primary">Confirmar</button>
+  </div>
+</div>

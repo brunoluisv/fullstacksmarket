@@ -1,0 +1,15 @@
+<mat-list>
+  <div *ngFor="let user of users" >
+    <mat-list-item class=".li">
+      <mat-icon class="icon" matListAvatar aria-hidden="false" aria-label="user">account_circle</mat-icon>
+      <h3 matLine>{{ user.name }}</h3>
+      <button (click)="goToTasks(user.id)" class="button-mg" mat-mini-fab color="primary" aria-label="Tarefas">
+        <mat-icon>list</mat-icon>
+      </button>
+      <button (click)="deleteUser(user)" mat-mini-fab color="warn" aria-label="Excluir">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+  </div>
+</mat-list>
