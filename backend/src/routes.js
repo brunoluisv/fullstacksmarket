@@ -33,7 +33,7 @@ routes.post('/users', UserController.create)
 routes.delete('/users/:id', UserController.delete)
 
 routes.get('/tasks/:id', TaskController.list)
-routes.delete('/tasks/:id', TaskController.delete)
+routes.delete('/tasks/:id/:taskId', TaskController.delete)
 routes.put('/tasks/:id', TaskController.update)
 routes.post('/tasks', TaskController.create)
 

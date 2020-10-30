@@ -12,13 +12,12 @@ module.exports = {
   },
 
   async delete (req, res) {
-    const { id } = req.params
-    const { task_id } = req.body
+    const { id, taskId } = req.params
 
     await connection('tasks')
       .where('user_id', id)
-      .andWhere('id', task_id)
-      .delete()
+      .andWhere('id', taskId)
+     .delete()
 
     res.status(204).send()
   },
