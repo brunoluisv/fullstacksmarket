@@ -7,9 +7,9 @@ Run `git clone https://github.com/brunoluisv/fullstacksmarket.git`
 
 ## Rodar servidor node
 
-`cd backend` 
-`npm install`
-`npm start`
+#`cd backend` 
+#`npm install`
+#`npm start`
 
 ## Rodar quasar-frontend
 
